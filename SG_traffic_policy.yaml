@@ -36,7 +36,7 @@
                  "Authorization": "Bearer {{ auth.json.data }}"
                }
       body:
-        "{{ lookup('file','myfile.json') }}"      
+        "{{ lookup('file','traffic_policy.json') }}"      
       body_format: json
       validate_certs: false
                                                                                                                      
