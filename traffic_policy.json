@@ -1,0 +1,19 @@
+{
+  "name": "rahul policy",
+  "description": "Limit requests to tenant",
+  "matchers": [
+     {
+        "type": "tenant",
+        "inverse": false,
+        "members":
+                  ["98260875739249691367"]
+
+     }
+    ],
+        "limits": [
+             {
+                 "type": "writeRequestRate",
+                 "value": 10000
+              }
+            ]
+  }
